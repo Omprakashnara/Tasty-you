@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Village Tasty Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    #map {
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Village Tasty Restaurant</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Menu</h2>
+      <!-- Interactive menu code goes here -->
+    </section>
+
+    <section id="about">
+      <h2>About the Restaurant</h2>
+      <!-- About the restaurant content goes here -->
+    </section>
+
+    <section id="testimonials">
+      <h2>Customer Testimonials</h2>
+      <!-- Testimonials content goes here -->
+    </section>
+
+    <section id="reservations">
+      <h2>Reservations</h2>
+      <!-- Reservations form goes here -->
+    </section>
+  </main>
+
+  <footer>
+    <div id="map"></div>
+  </footer>
+
+  <script>
+    // Filter menu items by category
+    function filterMenu(category) {
+      // Code to filter menu items goes here
+    }
+
+    // Initialize Google Maps
+    function initMap() {
+      // Code to initialize Google Maps goes here
+    }
+
+    // Load Google Maps API asynchronously
+    function loadGoogleMaps() {
+      var script = document.createElement('script');
+      script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+
+    // Call loadGoogleMaps when the page has finished loading
+    window.onload = loadGoogleMaps;
+  </script>
+</body>
+</html>
